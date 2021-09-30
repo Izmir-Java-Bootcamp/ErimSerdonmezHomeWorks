@@ -1,5 +1,5 @@
 /** @author Erim Serdonmez -- 30/09/2021  
- *  WeekOne.java -- Write a program that prints out characters in the form of a grid. The program should ask a number N from the user. The grid must be drawn as a square whose edge is N characters. The outermost characters must be * characters describing a border. Inside the border a checkerboard must be drawn using space and + characters. The top-left corner checkerboard character must be + character. Below are the outputs for 5 different values of N.
+ *  HomeWorkOne.java -- Write a program that prints out characters in the form of a grid. The program should ask a number N from the user. The grid must be drawn as a square whose edge is N characters. The outermost characters must be * characters describing a border. Inside the border a checkerboard must be drawn using space and + characters. The top-left corner checkerboard character must be + character. Below are the outputs for 5 different values of N.
  */
 
 package WeekOne.HomeWorks;
