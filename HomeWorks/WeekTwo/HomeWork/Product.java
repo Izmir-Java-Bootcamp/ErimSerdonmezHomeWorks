@@ -27,7 +27,7 @@ public class Product {
         return name;
     }
 
-    public double getPrice(){
+    public double getPrice(Cart cart){
         return price;
     }
 

@@ -27,7 +27,7 @@ public class Cart {
 
     public void addProduct(Product product, int howManyTimes){
         for(int i = 0; i < howManyTimes; i++){
-            this.product.add(product);
+            this.products.add(product);
         }
     }
 
