@@ -22,4 +22,20 @@ public class PersonalData {
         this.birthDate = LocalDate.of(year, month, day);
         this.ssn = ssn;
     }
+
+    public LocalDate getBirthDate(){
+        return this.birthDate;
+    }
+
+    public String getAdress(){
+        return this.address;
+    }
+
+    public long getSSN(){
+        return this.ssn;
+    }
+
+    public void setAdress(String adress){
+        this.address = adress;
+    }
 }
