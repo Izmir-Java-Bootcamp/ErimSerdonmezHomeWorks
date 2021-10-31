@@ -1,11 +1,16 @@
+package WeekOne.HomeWorks.WeekOneHomeWorks.src;
+
+
 /** @author Erim Serdonmez -- 30/09/2021
- *  HomeWorkTwo.java -- Write a program that requests a pattern string from the user. The pattern includes wild card character * in addition to any other //characters. Each occurrence of the wild chard character represents a sequence of any characters. After getting the pattern, the program continuously requests the user to enter a string and checks if the pattern occurs in the string using a method public static boolean occursIn(String pattern, String str). The program will exit when the user enters exit.
+ *  HomeWorkTwo.java -- Write a program that requests a pattern string from the user. The pattern includes wild card character * in addition to any other //characters.
+ *  Each occurrence of the wild chard character represents a sequence of any characters. 
+ * After getting the pattern, the program continuously requests the user to enter a string and checks if the pattern occurs in the string using a method public static boolean occursIn(String pattern, String str). 
+ * The program will exit when the user enters exit.
 */
-package WeekOne.HomeWorks;
 
 import java.util.Scanner;
 
-public class HomeWorkTwo {
+public class WeekOneHomeWorkTwo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the pattern which you'll like to find in a string (example: s*c*l) : ");
@@ -16,7 +21,6 @@ public class HomeWorkTwo {
             System.out.println(
                     "Please enter the String which you'll use the pattern in (You can exit the program by writing 'exit'...) :");
             String answer = input.nextLine();
-            
 
             // exiting the program if user enters 'exit'
             if (answer.equals("exit")) {

@@ -1,4 +1,4 @@
-package HomeWork;
+package WeekTwo.HomeWork;
 
 public class Product {
     private final String seller;

@@ -1,4 +1,4 @@
-package HomeWork;
+package WeekTwo.HomeWork;
 
 public class Buy2Take3product extends Product {
     private final Product original;
