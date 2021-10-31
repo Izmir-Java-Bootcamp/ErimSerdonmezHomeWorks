@@ -63,7 +63,7 @@ Enter a string: exit
 Bye
 ```
 
-### 3
+### 3rd HomeWork
 
 * **Implement the PersonalData class with the following UML diagram.**
 
