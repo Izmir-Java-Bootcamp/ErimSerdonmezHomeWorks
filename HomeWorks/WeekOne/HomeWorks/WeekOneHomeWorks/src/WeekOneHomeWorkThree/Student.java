@@ -1,3 +1,6 @@
+/** @author Erim Serdönmez
+ *  WeekOneHomeWorkThree -- OOP
+ */
 package WeekOne.HomeWorks.WeekOneHomeWorks.src.WeekOneHomeWorkThree;
 
 public class Student {
@@ -11,6 +14,6 @@ public class Student {
         this.id = id;
         this.gpa = gpa;
         this.pd = pd;
-        
+
     }
 }

@@ -1,7 +1,9 @@
+/** @author Erim Serdönmez
+ *  WeekOneHomeWorkThree -- OOP
+ */
 package WeekOne.HomeWorks.WeekOneHomeWorks.src.WeekOneHomeWorkThree;
 
 import java.time.LocalDate;
-import java.time.Month;
 
 public class PersonalData {
     // Nitelikler
