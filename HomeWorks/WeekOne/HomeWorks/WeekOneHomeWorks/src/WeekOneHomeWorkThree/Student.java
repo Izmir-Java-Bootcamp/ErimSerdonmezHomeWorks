@@ -33,8 +33,8 @@ public class Student {
         return this.pd;
     }
 
-    public String printInfo(Student s1){
-        String m1 = "Name \t: " + s1.getName() +"\nID \t: " + s1.getID() + "\nGPA \t: "+ s1.getGPA();
+    public String toString(){
+        String m1 = "Name \t: "+ this.name + "\tID : " + this.id + "\tGPA : " + this.gpa;
         return m1;
     }
 }

@@ -9,7 +9,7 @@ public class PersonalData {
     // Nitelikler
     private LocalDate birthDate;
     private String address;
-    private long ssn;
+    private long ssn; // Social Security Number
 
     //Constructor Default
     PersonalData(LocalDate birthDate, long ssn){
@@ -17,7 +17,7 @@ public class PersonalData {
         this.ssn = ssn;
     }
 
-    // Constructor uses int and long value
+    // Constructor uses int and long value SSN
     PersonalData(int year, int month,int day,long ssn){
         this.birthDate = LocalDate.of(year, month, day);
         this.ssn = ssn;
