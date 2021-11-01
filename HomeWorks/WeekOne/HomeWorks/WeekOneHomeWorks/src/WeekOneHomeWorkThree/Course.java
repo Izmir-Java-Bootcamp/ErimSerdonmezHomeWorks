@@ -3,6 +3,7 @@
  */
 package WeekOne.HomeWorks.WeekOneHomeWorks.src.WeekOneHomeWorkThree;
 
+
 public class Course {
     
     // Nitelik
@@ -37,8 +38,8 @@ public class Course {
     }
 
     public Student[] getStudents() {
-        // TODO Make an Array List and return it
         return students;
+
     }
 
     public boolean addStudent(Student s1) {
@@ -61,9 +62,15 @@ public class Course {
     }
 
     public boolean dropStudent(Student s1) {
-        // TODO Write the Code
-        numberOfStudents--;
-        return true;
+        for(int i = 0 ; i < this.numberOfStudents; i++){
+            if(s1.getID() == this.students[i].getID()){
+                System.arraycopy(this.students, i+1, this.students, i, this.numberOfStudents - i);
+                this.numberOfStudents--;
+                return true;
+            }
+        }
+        System.out.println("Cannot find \t: " + s1.getName() + " in this Course " + this.name);
+        return false;
     }
 
     public void increaseCapacity() {
@@ -75,18 +82,30 @@ public class Course {
         students = newStudents;
     }
 
-    public Student getBestStudent(Student s1) {
-        // TODO
-        return s1;
+    public Student getBestStudent() {
+        Student bestStudent = students[0];
+        for(int i = 0; i < getNumberOfStudents(); i++){
+            if(students[i].getGPA() > bestStudent.getGPA()){
+                bestStudent = students[i];
+            }
+        }
+        return bestStudent;
     }
 
-    public Student getYoungestStudent(Student s1) {
-        // TODO
-        return s1;
+    public Student getYoungestStudent() {
+        Student y = students[0];
+        for(int i = 1 ; i < this.getNumberOfStudents(); i++){
+            if(students[i].gPersonalData().getBirthDate().compareTo(y.gPersonalData().getBirthDate()) < 0){
+                y = students[i];
+            }
+        }
+        return y;
     }
 
     public void clear() {
-
+        Student[] newStudents = new Student[this.capacity];
+        students = newStudents;
+        this.numberOfStudents = 0;
     }
 
     public void list() {

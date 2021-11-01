@@ -38,9 +38,9 @@ public class Main {
         c1.addStudent(s5);
 
         // All Students of K129 are printed on screen.
-        System.out.println("=================");
+        infoBlock();
         c1.list();
-        System.out.println("==================");
+        infoBlock();
 
         // Course Capacity increased
         c1.increaseCapacity();
@@ -50,17 +50,66 @@ public class Main {
         c1.addStudent(s5);
 
         // Print the students
-        System.out.println("===================");
+        infoBlock();
         c1.list();
-        System.out.println("===================");
+        infoBlock();
 
         // Dropping s5 from the class
-
+        c1.dropStudent(s5);
 
         // print the Class students
-
+        infoBlock();
+        c1.list();
+        infoBlock();
         // Print the number of students in the class
-        System.out.println(c1.getNumberOfStudents());
+        System.out.println("Number of Students in class : " + c1.getCourseName() + " is : " +  c1.getNumberOfStudents());
 
+        // Getting the Best Student's Birthyear
+        System.out.println( "Best Student in Course :" + c1.getCourseName() + " is " + c1.getBestStudent().getName() + " and their birthday is : " + c1.getBestStudent().gPersonalData().getBirthDate());
+        infoBlock();
+        // New Course is created
+        Course c2 = new Course("K130");
+
+        // All Students in C1 is enrolled to C2
+        Student[] student = c1.getStudents();
+        for(int i = 0 ; i < c1.getNumberOfStudents(); i++){
+            c2.addStudent(student[i]);
+        }
+
+        // printing the Students of C2
+        infoBlock();
+        c2.list();
+        infoBlock();
+
+        // All Students of K129 removed from the course
+        c1.clear();
+
+        // Dropping the Student with 5005
+        c1.dropStudent(s5);
+
+        // All Students of K130 printed on screen
+        infoBlock();
+        c2.list();
+        infoBlock();
+
+        // Best Student of K130 is dropped from K130
+        c2.dropStudent(c2.getBestStudent());
+        // Al students of K130 printed
+        c2.list();
+        // GPA of the youngest studenf of K130 printed
+        infoBlock();
+        System.out.println("Youngest Student in class : " + c2.getCourseName() + " and its name is : " + c2.getBestStudent().getName() + " GPA is : " + c2.getBestStudent().getGPA());
+
+        // Courses of K129 and K130 printed
+        infoBlock();
+        c1.list();
+        infoBlock();
+        c2.list(); 
+        infoBlock();
+        System.out.println("Thank You...");
+    }
+
+    public static void infoBlock(){
+        System.out.println("================");
     }
 }
