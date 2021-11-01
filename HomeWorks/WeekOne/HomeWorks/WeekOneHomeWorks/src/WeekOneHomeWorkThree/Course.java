@@ -93,9 +93,9 @@ public class Course {
     }
 
     public Student getYoungestStudent() {
-        Student y = students[0];
+        Student y = this.students[0];
         for(int i = 1 ; i < this.getNumberOfStudents(); i++){
-            if(students[i].gPersonalData().getBirthDate().compareTo(y.gPersonalData().getBirthDate()) < 0){
+            if(students[i].gPersonalData().getBirthDate().getYear() <= y.gPersonalData().getBirthDate().getYear()){ 
                 y = students[i];
             }
         }
